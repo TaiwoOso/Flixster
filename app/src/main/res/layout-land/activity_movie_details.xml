@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="120dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -19,11 +19,12 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ratingBar"
+        android:layout_below="@+id/rbVoteAverage"
         android:layout_centerVertical="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         tools:text="Luca" />
 
@@ -36,11 +37,15 @@
         tools:text="Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface." />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/rbVoteAverage"
+        style="@style/Widget.AppCompat.RatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
-        android:layout_toEndOf="@+id/ivPoster" />
+        android:layout_toEndOf="@+id/ivPoster"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.15"
+        android:stepSize=".5" />
 </RelativeLayout>

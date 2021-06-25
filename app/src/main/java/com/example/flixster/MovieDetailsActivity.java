@@ -67,7 +67,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
             radius = 50; // corner radius, higher value = more rounded
             margin = 10; // crop margin, set to 0 for corners with no crop
             buttonRadius = 75; // corner radius, higher value = more rounded
-            buttonMargin = 30; // crop margin, set to 0 for corners with no crop
+            buttonMargin = 50; // crop margin, set to 0 for corners with no crop
         } else {
             imageUrl = movie.getPosterPath();
             radius = 30; // corner radius, higher value = more rounded

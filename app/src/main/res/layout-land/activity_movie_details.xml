@@ -13,6 +13,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView

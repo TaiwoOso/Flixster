@@ -14,6 +14,8 @@ import com.example.flixster.models.Movie;
 
 import org.parceler.Parcels;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 public class MovieDetailsActivity extends AppCompatActivity {
 
     Movie movie;
@@ -40,13 +42,23 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
         // Set the poster
         String imageUrl;
+        int radius;
+        int margin;
+
         if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             imageUrl = movie.getBackdropPath();
+            radius = 50; // corner radius, higher value = more rounded
+            margin = 10; // crop margin, set to 0 for corners with no crop
         } else {
             imageUrl = movie.getPosterPath();
+            radius = 30; // corner radius, higher value = more rounded
+            margin = 10; // crop margin, set to 0 for corners with no crop
         }
+
         Glide.with(this)
                 .load(imageUrl)
+                .centerCrop() // scale image to fill the entire ImageView
+                .transform(new RoundedCornersTransformation(radius, margin))
                 .placeholder(R.drawable.flicks_movie_placeholder)
                 .into(ivPoster);
 

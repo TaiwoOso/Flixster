@@ -50,4 +50,18 @@
         android:numStars="5"
         android:rating="4.15"
         android:stepSize=".5" />
+
+    <ImageView
+        android:id="@+id/ivYoutubePlayBtn"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ivPoster"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/youtube_play_button" />
 </RelativeLayout>

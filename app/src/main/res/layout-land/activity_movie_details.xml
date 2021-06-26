@@ -51,6 +51,7 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:isIndicator="true"
         android:numStars="5"
+        android:progressBackgroundTint="@color/black"
         android:progressTint="#03A9F4"
         android:rating="4.15"
         android:stepSize=".5" />

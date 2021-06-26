@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/space_background"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -27,6 +28,7 @@
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         tools:text="Luca" />
 
@@ -36,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivPoster"
         android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
         tools:text="Luca and his best friend Alberto experience an unforgettable summer on the Italian Riviera. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface." />
 
     <RatingBar
@@ -48,6 +51,7 @@
         android:layout_toEndOf="@+id/ivPoster"
         android:isIndicator="true"
         android:numStars="5"
+        android:progressTint="#03A9F4"
         android:rating="4.15"
         android:stepSize=".5" />
 

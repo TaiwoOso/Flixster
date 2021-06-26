@@ -40,7 +40,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_details);
-
         // Initialize the view objects
         ivPoster = findViewById(R.id.ivPoster);
         tvTitle = findViewById(R.id.tvTitle);
